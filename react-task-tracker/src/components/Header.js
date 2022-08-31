@@ -9,11 +9,11 @@ const onClick = (e) => {
   console.log(e);
 }
 
-const Header = ({ title }) => {
+const Header = ({ title, requiredPropDemo }) => {
   return (
     <header className='header'>
       {/* <h1 style={headingStyle}>{title}</h1> */}
-      <h1>{title}</h1>
+      <h1>{title} {requiredPropDemo}</h1>
       <Button text='Add' onClick={onClick} />
     </header>
   )
